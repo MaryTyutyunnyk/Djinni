@@ -55,4 +55,3 @@ function watchTask() {
 
 exports.dev = series(html, styles, images, watchTask);
 exports.build = series(cleanFiles, html, styles, images, watchTask);
-exports.cleancss = series(cleanFiles);
