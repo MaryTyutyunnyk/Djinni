@@ -1,7 +1,7 @@
 # Djinni
 Stack: HTML5, SCSS, Gulp
 
-Watch demo -
+Watch demo - https://marytyutyunnyk.github.io/Djinni/
 
 How to start the project ?
 
