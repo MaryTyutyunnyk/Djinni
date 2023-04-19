@@ -1,0 +1,33 @@
+.search-wrapper {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 16px;
+    top: 50%;
+    width: 16px;
+    height: 16px;
+    color: $body-color;
+    background-image: url("../../img/search-icon.svg");
+    background-size: 16px;
+    transform: translateY(-50%);
+  }
+
+  input {
+    padding: $input-group-addon-padding-y $input-group-addon-padding-x;
+    color: $body-color;
+    background-color: $input-group-addon-bg;
+    border: 1px solid transparent;
+    border-radius: 100px;
+    transition: none;
+
+    &:hover,
+    &:focus {
+      color: $body-color;
+      background-color: $input-group-addon-bg;
+      box-shadow: none;
+      border-color: $color-accent-primary;
+    }
+  }
+}

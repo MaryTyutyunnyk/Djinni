@@ -1,0 +1,46 @@
+$nav-link-padding-x: $spacer;
+
+aside {
+  .nav-pills {
+    .nav-link {
+      padding-right: $nav-link-padding-x;
+      padding-left: $nav-link-padding-x;
+      color: $body-color;
+      word-wrap: break-word;
+      word-break: break-word;
+
+      &:hover,
+      &:focus {
+        color: $navbar-light-active-color;
+      }
+
+      &.active {
+        color: $white;
+        background-color: $color-accent-primary;
+        border-radius: 8px;
+
+        svg {
+          path {
+            fill: $white;
+          }
+        }
+      }
+
+      &.selfies,
+      &.recent {
+        &.active {
+          svg {
+            path {
+              stroke: $white;
+              fill: transparent;
+            }
+          }
+        }
+      }
+
+      svg {
+        flex-shrink: 0;
+      }
+    }
+  }
+}

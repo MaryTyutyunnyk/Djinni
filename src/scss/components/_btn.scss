@@ -1,0 +1,52 @@
+.btn {
+  padding: $btn-padding-y $btn-padding-x;
+  font-weight: $font-weight-bold;
+  color: $btn-color;
+  background-color: $white;
+  border: 2px solid $border-color;
+  border-radius: $btn-border-radius;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  transition: $btn-transition;
+
+  &:hover {
+    color: $white;
+    background-color: $btn-active-bg;
+    border-color: transparent;
+  }
+
+  &:active {
+    color: $btn-active-color !important;
+    background-color: $white;
+    border-color: $btn-active-border-color !important;
+  }
+
+  &:focus-visible {
+    color: $btn-active-color !important;
+    border-color: $btn-active-border-color !important;
+    box-shadow: $btn-focus-box-shadow;
+  }
+
+  &.btn-primary {
+    color: $white;
+    background-color: $color-accent-primary;
+    border-color: transparent;
+
+    &:active {
+      color: $white !important;
+      background-color: $color-accent-primary !important;
+      border-color: transparent !important;
+    }
+  }
+
+  &.btn-dark {
+    color: $white;
+    background-color: $btn-dark-color;
+    border-color: transparent;
+
+    &:active {
+      color: $white !important;
+    }
+  }
+}

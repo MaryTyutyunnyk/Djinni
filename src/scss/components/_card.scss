@@ -1,0 +1,15 @@
+.card-text {
+  word-wrap: break-word;
+  word-break: break-word;
+}
+
+.card-footer {
+  .btn-group {
+    width: 100%;
+  }
+
+  .btn-group-item {
+    display: inline-flex;
+    max-width: 100%;
+  }
+}

@@ -1,0 +1,20 @@
+$spacer: 1rem;
+
+.py-lg-6 {
+  @include media-breakpoint-up(lg) {
+    padding-top: $spacer * 3.5 !important;
+    padding-bottom: $spacer * 3.5 !important;
+  }
+}
+
+.ml-md-32 {
+  @include media-breakpoint-up(md) {
+    margin-left: 32px;
+  }
+}
+
+.mb-lg-32 {
+  @include media-breakpoint-up(lg) {
+    margin-bottom: $spacer * 2 !important;
+  }
+}

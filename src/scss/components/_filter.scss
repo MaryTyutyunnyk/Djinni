@@ -1,0 +1,40 @@
+.btn-group {
+  &.btn-filter-group {
+    .btn {
+      padding: $btn-padding-y $btn-padding-x;
+      width: 88px;
+      height: 40px;
+      font-weight: $font-weight-bold;
+      color: $btn-color;
+      background-color: $white;
+      border: 2px solid $border-color;
+      overflow: initial;
+
+      &:hover,
+      &:focus {
+        border-color: $btn-active-border-color;
+      }
+
+      &.active {
+        color: $white !important;
+        background-color: $btn-active-bg;
+        border-color: transparent;
+      }
+
+      &:first-of-type {
+        border-radius: 8px 0 0 8px !important;;
+        border-right: none;
+      }
+
+      &:last-of-type {
+        border-radius: 0 8px 8px 0 !important;
+        border-left: none;
+      }
+    }
+
+    > :not(.btn-check:first-child) + .btn,
+    > .btn-group:not(:first-child) {
+      margin-left: 0;
+    }
+  }
+}

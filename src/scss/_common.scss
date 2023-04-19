@@ -1,0 +1,21 @@
+$body-color: #666666;
+$font-family-sans-serif: 'Commissioner', sans-serif;
+$container-max-widths: 1160px;
+$container-padding-x: 16px;
+
+body {
+  font-family: $font-family-sans-serif;
+  color: $body-color;
+}
+
+.container {
+  margin: 0 auto;
+  padding-right: $container-padding-x;
+  padding-left: $container-padding-x;
+  max-width: $container-max-widths;
+}
+
+.counter {
+  font-size: 14px;
+  font-weight: $font-weight-bold;
+}
